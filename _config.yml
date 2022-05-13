@@ -1,1 +1,9 @@
 theme: jekyll-theme-cayman
+title: Minho Song
+url: 'https://MinhoSong.github.io'
+baseurl: '/'
+
+author:
+name: Minho Song
+email: smh3227@gmail.com
+github_username: MinhoSong
