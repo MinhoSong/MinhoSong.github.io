@@ -1,6 +1,7 @@
-## Minho Song
+# Minho Song's Homepage
 
-You can use the [editor on GitHub](https://github.com/MinhoSong/MinhoSong.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+Hello! I am a post-doc working at [AORC](https://swb.skku.edu/aorc/index.do) in Sungkyunkwan University.
+
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
