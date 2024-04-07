@@ -6,5 +6,5 @@ profile_picture:
 ---
 
 <p>
-  Hello! I am a postdoc working at <a href="https://skku.edu">Sunkyunkwan university</a>.
+  Hello! I am a postdoc working at <a href="https://www.skku.edu">Sunkyunkwan university</a>.
 </p>
