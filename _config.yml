@@ -20,7 +20,8 @@ footer:
   show_powered_by: true
   contact:
     - name: Email
-      value: smh3227@skku.edu
+      value: smh3227(at)skku.edu
+      link: mailto:smh3227@skku.edu
 
 
 # Build settings
