@@ -1,4 +1,5 @@
-<head>
+<html>
+  <head>
 <script>
 MathJax = {
   tex: {
@@ -16,3 +17,5 @@ MathJax = {
 <body>
 What is a Riordan matrix?
 </body>
+</html>
+
