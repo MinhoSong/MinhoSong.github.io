@@ -3,10 +3,10 @@
   - Refined canonical stable Grothendieck polynomials and their duals, Part 2 (with Byung-Hak Hwang, Jihyeug Jang, Jang Soo Kim, and U-Keun Song),  <a href="https://arxiv.org/abs/2404.02483" target="_blank" rel="noopener noreferrer">arXiv:2404.02483</a>
   - Combinatorial reciprocity for Riordan arrays (with Jihyeug Jang and Louis W. Shapiro), submitted
   - Kemeny's constant and enumerating Braess edges in trees (with Jihyeug Jang, Mark Kempton, Sooyeong Kim, Adam Knudson, and Neal Madras), <a href="https://arxiv.org/abs/2309.02977" target="_blank" rel="noopener noreferrer">arXiv:2309.02977</a> 
-  - Strictly monotone sequences of lower and upper bounds on Perron values and their combinatorial applications (with Sooyeong Kim), to appear in Linear & Multilinear Algebra,  <a href="https://arxiv.org/abs/2207.06016" target="_blank" rel="noopener noreferrer">arXiv:2207.06016</a>
   
 
 * 2024
+  - Strictly monotone sequences of lower and upper bounds on Perron values and their combinatorial applications (with Sooyeong Kim), Linear & Multilinear Algebra, 2024, 1--29  <a href="https://arxiv.org/abs/2207.06016" target="_blank" rel="noopener noreferrer">arXiv:2207.06016</a>
   - Refined canonical stable Grothendieck polynomials and their duals, Part 1 (with Byung-Hak Hwang, Jihyeug Jang, Jang Soo Kim, and U-Keun Song), Advances in Mathematics, 446 (2024), 109670 <a href="https://arxiv.org/abs/2104.04251" target="_blank" rel="noopener noreferrer">arXiv:2104.04251</a>
   - A Riordan group poset (with Louis W. Shapiro), Linear Algebra and its Applications, 689 (2024), 66--85
 
