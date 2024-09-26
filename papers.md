@@ -7,8 +7,8 @@
 
 * 2024
   - Refined canonical stable Grothendieck polynomials and their duals, Part 1 (with Byung-Hak Hwang, Jihyeug Jang, Jang Soo Kim, and U-Keun Song), Advances in Mathematics, 446 (2024), 109670 <a href="https://arxiv.org/abs/2104.04251" target="_blank" rel="noopener noreferrer">arXiv:2104.04251</a>
-  - Strictly monotone sequences of lower and upper bounds on Perron values and their combinatorial applications (with Sooyeong Kim), Linear & Multilinear Algebra, 2024, 1--29  <a href="https://arxiv.org/abs/2207.06016" target="_blank" rel="noopener noreferrer">arXiv:2207.06016</a>
   - A Riordan group poset (with Louis W. Shapiro), Linear Algebra and its Applications, 689 (2024), 66--85
+  - Strictly monotone sequences of lower and upper bounds on Perron values and their combinatorial applications (with Sooyeong Kim), Linear & Multilinear Algebra, 2024, 1--29  <a href="https://arxiv.org/abs/2207.06016" target="_blank" rel="noopener noreferrer">arXiv:2207.06016</a>
 
 * 2023
   - Kemeny's constant and Wiener index on trees (with Jihyeug Jang and Sooyeong Kim), Linear Algebra and its Applications, 674 (2023), 230--243
