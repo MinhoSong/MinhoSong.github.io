@@ -6,7 +6,7 @@
 # Published/Accepted Papers 
 
 * 2025
- - Combinatorial reciprocity for Riordan arrays (with Jihyeug Jang and Louis W. Shapiro), Linear Algebra and its Applications, in press, available online 5 February 2025.
+  - Combinatorial reciprocity for Riordan arrays (with Jihyeug Jang and Louis W. Shapiro), Linear Algebra and its Applications, in press, available online 5 February 2025.
 
 * 2024
   - Kemeny's constant and enumerating Braess edges in trees (with Jihyeug Jang, Mark Kempton, Sooyeong Kim, Adam Knudson, and Neal Madras), Linear & Multilinear Algebra, 2024, 1–37 <a href="https://arxiv.org/abs/2309.02977" target="_blank" rel="noopener noreferrer">arXiv:2309.02977</a> 
