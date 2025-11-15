@@ -25,4 +25,4 @@
 
 * ~2021
   - A new aspect of Riordan arrays via Krylov matrices, (with Gi-Sang Cheon), Linear Algebra and its Applications, 554 (2018), 329--341.
-  - Finite and infinite dimensional Lie group structures on Riordan groups (with Gi-Sang Cheon, Ana Luzón, Manuel A. Morón, and L. Felipe Prieto-Martinez) Advances in Mathematics 319 (2017), 522--566.
+  - Finite and infinite dimensional Lie group structures on Riordan groups (with Gi-Sang Cheon, Ana Luzón, Manuel A. Morón, and Luis Felipe Prieto-Martinez) Advances in Mathematics 319 (2017), 522--566.
