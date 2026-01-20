@@ -7,8 +7,9 @@
 
 * 2025
   - Combinatorics of orthogonal polynomials on the unit circle (with Jihyeug Jang),  The Ramanujan Journal, 68:84 (2025), 1--36. <a href="https://arxiv.org/abs/2407.07508" target="_blank" rel="noopener noreferrer">arXiv:2407.07508</a>
+  - Combinatorial reciprocity for Riordan arrays (with Jihyeug Jang and Louis W. Shapiro), Linear Algebra and its Applications, 721 (2025), 419--448.
   - Refined canonical stable Grothendieck polynomials and their duals, Part 2 (with Byung-Hak Hwang, Jihyeug Jang, Jang Soo Kim, and U-Keun Song), European Journal of Combinatorics, 127 (2025), 104166.  <a href="https://arxiv.org/abs/2404.02483" target="_blank" rel="noopener noreferrer">arXiv:2404.02483</a>
-  - Combinatorial reciprocity for Riordan arrays (with Jihyeug Jang and Louis W. Shapiro), Linear Algebra and its Applications, in press, available online 5 February 2025.
+
 
 * 2024
   - Kemeny's constant and enumerating Braess edges in trees (with Jihyeug Jang, Mark Kempton, Sooyeong Kim, Adam Knudson, and Neal Madras), Linear & Multilinear Algebra, 2024, 1–37 <a href="https://arxiv.org/abs/2309.02977" target="_blank" rel="noopener noreferrer">arXiv:2309.02977</a> 
