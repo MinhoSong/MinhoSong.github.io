@@ -3,7 +3,7 @@
 
 title: Minho Song's hompage
 description: >- # this means to ignore newlines until "baseurl:"
-  Hello! I am a postdoc working at Sunkyunkwan University.
+  Hello! I am a postdoc working at Yonsei University.
 baseurl: "" # the subpath of the site
 url: "https://MinhoSong.github.io" # the base hostname & protocol for the site
 og_image: /assets/img/profile-pic.jpg
@@ -17,10 +17,13 @@ header:
 
 footer:
   show_powered_by: true
-  contact:
     - name: Email
-      value: smh3227(at)skku.edu
-      link: mailto:smh3227@skku.edu
+      value: minhosong(at)yonsei.ac.kr
+      link: 
+
+    - name: Former email
+      value: "<del>smh3227(at)skku.edu</del>"
+      link:
 
 
 # Build settings
