@@ -19,11 +19,11 @@ footer:
   show_powered_by: true
     - name: Email
       value: minhosong(at)yonsei.ac.kr
-      link: 
+
 
     - name: Former email
       value: "<del>smh3227(at)skku.edu</del>"
-      link:
+
 
 
 # Build settings
