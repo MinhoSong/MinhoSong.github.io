@@ -17,9 +17,9 @@ header:
 
 footer:
   show_powered_by: true
+  contact:
     - name: Email
-      value: minhosong(at)yonsei.ac.kr
-
+      value: "minhosong(at)yonsei.ac.kr"
 
     - name: Former email
       value: "<del>smh3227(at)skku.edu</del>"
