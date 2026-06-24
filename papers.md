@@ -1,4 +1,5 @@
 # Preprints
+  - An explicit formula for Koornwinder moments and Rains' positivity conjecture (with Younggwang Cho, Donghyun Kim, Jang Soo Kim, Hojoon Lee, and Jing Liu) <a href="http://arxiv.org/abs/2606.14241" target="_blank" rel="noopener noreferrer">arXiv:2606.14241</a>
   - Combinatorics of generalized orthogonal polynomials of type R_II (with Jang Soo Kim) <a href="http://arxiv.org/abs/2411.12345" target="_blank" rel="noopener noreferrer">arXiv:2411.12345</a>
  
 
