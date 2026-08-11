@@ -3321,6 +3321,43 @@
     line-height: 1.48;
   }
 
+  .welcome-autoshow-option {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    gap: 9px;
+    align-items: start;
+    margin-top: 12px;
+    border: 1px solid #d9e1ea;
+    border-radius: 11px;
+    background: #fbfcfe;
+    padding: 10px 11px;
+    cursor: pointer;
+  }
+
+  .welcome-autoshow-option input {
+    width: 17px;
+    height: 17px;
+    margin: 1px 0 0;
+    accent-color: #3568b8;
+  }
+
+  .welcome-autoshow-option strong,
+  .welcome-autoshow-option small {
+    display: block;
+  }
+
+  .welcome-autoshow-option strong {
+    color: #344054;
+    font-size: .78rem;
+  }
+
+  .welcome-autoshow-option small {
+    margin-top: 2px;
+    color: #6d7b8d;
+    font-size: .69rem;
+    line-height: 1.45;
+  }
+
   .mode-quick-start {
     margin-top: 10px;
     border: 1px solid #bcd0e8;
@@ -6198,6 +6235,17 @@ function instructionBody() {
       Pick a mode. A short spotlight tour will point to the actual controls.
     </div>
 
+    <label class="welcome-autoshow-option" for="welcomeSuppressAutoShow">
+      <input
+        id="welcomeSuppressAutoShow"
+        type="checkbox"
+        onchange="setWelcomeAutoShowPreference(this.checked)">
+      <span>
+        <strong>Don't show this again</strong>
+        <small>You can reopen this guide at any time with the Guide button.</small>
+      </span>
+    </label>
+
     <div class="popup-actions">
       <button
         type="button"
@@ -6214,11 +6262,11 @@ function instructionBody() {
   `;
 }
 
-function showInstructionPopup(firstVisit = false) {
+function showInstructionPopup(automatic = false) {
   openPopup({
     kicker:
-      firstVisit
-        ? "First visit"
+      automatic
+        ? "Welcome"
         : "Guide",
     title:
       "Explore, certify, and discover patterns in FK words",
@@ -6227,6 +6275,18 @@ function showInstructionPopup(firstVisit = false) {
     bodyHtml:
       instructionBody()
   });
+
+  const suppressAutoShow =
+    document.getElementById(
+      "welcomeSuppressAutoShow"
+    );
+
+  if (suppressAutoShow) {
+    suppressAutoShow.checked =
+      safeStorage.getItem(
+        FK_ONBOARDING_SUPPRESS_KEY
+      ) === "1";
+  }
 }
 
 function chooseProblemWord() {
@@ -16061,8 +16121,8 @@ function showToast(message, kind) {
 }
 
 
-const FK_ONBOARDING_KEY =
-  "fk-onboarding-welcome-v2";
+const FK_ONBOARDING_SUPPRESS_KEY =
+  "fk-onboarding-do-not-show-v1";
 
 const MODE_QUICK_START = {
   exact: {
@@ -16267,21 +16327,27 @@ let tourTrackingFrame = null;
 let tourTransitionToken = 0;
 let tourHasPosition = false;
 
-function markWelcomeSeen() {
-  safeStorage.setItem(
-    FK_ONBOARDING_KEY,
-    "1"
-  );
+function setWelcomeAutoShowPreference(
+  suppress
+) {
+  if (suppress) {
+    safeStorage.setItem(
+      FK_ONBOARDING_SUPPRESS_KEY,
+      "1"
+    );
+  } else {
+    safeStorage.removeItem(
+      FK_ONBOARDING_SUPPRESS_KEY
+    );
+  }
 }
 
 function dismissWelcomePopup() {
-  markWelcomeSeen();
   closePopup();
   renderModeQuickStart();
 }
 
 function startWelcomeMode(mode) {
-  markWelcomeSeen();
   closePopup();
 
   const select =
@@ -16520,8 +16586,6 @@ function clearTourTargetDecoration() {
 function startModeTour(
   requestedMode = null
 ) {
-  markWelcomeSeen();
-
   const mode =
     requestedMode ||
     currentGameMode();
@@ -17268,10 +17332,9 @@ if (currentGameMode() === "extend") {
 
 if (
   safeStorage.getItem(
-    FK_ONBOARDING_KEY
+    FK_ONBOARDING_SUPPRESS_KEY
   ) !== "1"
 ) {
-  markWelcomeSeen();
   showInstructionPopup(true);
 }
 </script>
