@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title">
+  <title id="title">A rising lattice path</title>
+  <rect width="512" height="512" rx="72" fill="#f7f3ea"/>
+  <path d="M84 392h166V248h158V88" fill="none" stroke="#12384b" stroke-width="42" stroke-linecap="round" stroke-linejoin="round"/>
+  <g fill="#12384b">
+    <circle cx="84" cy="392" r="40"/>
+    <circle cx="250" cy="392" r="40"/>
+    <circle cx="250" cy="248" r="40"/>
+    <circle cx="408" cy="248" r="40"/>
+  </g>
+  <circle cx="408" cy="88" r="40" fill="#9d3835"/>
+</svg>
