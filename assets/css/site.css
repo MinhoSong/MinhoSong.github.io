@@ -436,8 +436,11 @@ h3 {
 
 .footer-links {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
   gap: 20px;
   align-items: start;
+  max-width: 390px;
 }
 
 .footer-links a {
@@ -888,6 +891,7 @@ h3 {
 
   .footer-links {
     flex-wrap: wrap;
+    justify-content: flex-start;
   }
 }
 
