@@ -1,147 +1,22 @@
-# Bay
+# Minho Song — academic homepage
 
-[![Version](https://img.shields.io/gem/v/bay_jekyll_theme)](https://rubygems.org/gems/bay_jekyll_theme)
-[![Downloads](https://img.shields.io/gem/dt/bay_jekyll_theme)](https://rubygems.org/gems/bay_jekyll_theme)
+A theme-free static site for GitHub Pages. It keeps the original homepage and publication content, adds an **AI & Math** page, and includes the standalone **FK Edge-Heap Lab**.
 
-Bay is a simple theme for Jekyll. [[view live]](https://eliottvincent.github.io/bay)
+## Publish on GitHub Pages
 
-Inspired by [dangrover.com](http://dangrover.com/). Current theme used at [eliottvincent.com](http://eliottvincent.com/).
+1. Copy everything in this folder to the root of the `MinhoSong.github.io` repository.
+2. Commit and push to the branch used by GitHub Pages (normally `main`).
+3. In **Settings → Pages**, choose **Deploy from a branch** and select the repository root.
 
-![](/screenshot.png)
+No Ruby, Jekyll theme, package installation, or build step is required.
 
-### Installation
+## Main files
 
+- `index.html` — home
+- `papers.html` — preprints and publications
+- `ai-math.html` — AI & mathematics activities
+- `ai/fk-edge-heap-lab.html` — interactive FK algebra game/lab
+- `assets/css/site.css` — the complete visual system
+- `CV_Minho Song.pdf` — curriculum vitae
 
-The easiest solution is to [fork this repo](https://github.com/eliottvincent/bay/fork).
-If you want to start from a clean website, follow the steps below:
-
-Create a new Jekyll website:
-```
-jekyll new mysite
-```
-
-Open `Gemfile` and replace the line:
-```
-gem "minima"
-```
-with:
-```
-gem "bay_jekyll_theme"
-```
-
-Open `_config.yml` and replace the line:
-```
-theme: minima
-```
-with:
-```
-theme: bay_jekyll_theme
-```
-or, for GitHub Pages:
-```
-remote_theme: eliottvincent/bay
-```
-
-Finally, install the dependencies:
-```
-bundle install
-```
-
-and build the website!
-```
-jekyll serve
-```
-
-
-The website will look somewhat empty at first. That's normal. Follow the next instructions to complete the header and footer components, and the home and blog pages.
-
-### Header
-Open the `_config.yml` file and add the following:
-```yml
-header:
-  pages:
-    - name: Home
-      slug: /     # <-- index.md
-    - name: Blog  # <-- blog.md
-    - name: Whatever  # <-- whatever.md
-```
-Re-run `jekyll serve` to see the header updated.
-
-### Footer
-Open the `_config.yml` file and add the following:
-```yml
-footer:
-  show_powered_by: true
-  contact:
-    - name: Email
-      value: yourmail@domain.com
-      link: mailto:yourmail@domain.com
-    - name: WeChat
-      value: YourWeChatUsername
-      link: "#"
-  follow:
-    - name: Twitter
-      link: http://twitter.com/YourTwitterUsername
-      username: "@YourTwitterUsername"
-    - name: Facebook
-      link: http://facebook.com/YourFacebookUsername
-    - name: LinkedIn
-      link: http://linkedin.com/in/YourLinkedInUsername
-    - name: GitHub
-      link: http://github.com/YourGitHubUsername
-    - name: Dribbble
-      link: https://dribbble.com/YourDribbbleUsername
-    - name: Weibo
-      link: http://weibo.com/u/YourWeiboUsername
-    - name: RSS
-      link: /feed.xml
-```
-Re-run `jekyll serve` to see the footer updated.
-
-### Home page
-Create (or edit) the `index.markdown` file and add the following:
-```yml
----
-layout: home
-profile_picture:
-  src: /assets/img/profile-pic.jpg
-  alt: website picture
----
-
-<p>
-  Welcome to mysite!
-</p>
-```
-
-### Blog page
-Create `blog.markdown` file and add the following:
-```yml
----
-layout: blog
-title: Blog
-slug: /blog
----
-
-This is an example of a "Blog" page, displaying a list of posts.
-<br />
-```
-
-
-Your website is ready!
-
-
-### Development
-
-#### Run development instance (with hot-reload)
-```sh
-bundle exec jekyll serve
-```
-
-#### Build and publish the gem
-```sh
-gem build bay_jekyll_theme.gemspec
-```
-
-```sh
-gem push bay_jekyll_theme-1.x.x.gem
-```
+The FK lab runs entirely in the visitor's browser. Its nonzero-word archive stays on that computer and is not uploaded or synchronized.
