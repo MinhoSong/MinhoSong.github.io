@@ -4744,8 +4744,18 @@ const safeStorage = (() => {
   }
 })();
 
-let N = Number(safeStorage.getItem("fk-n") || 5);
-if (!Number.isInteger(N) || N < 4 || N > 10) N = 5;
+function storedVertexCountForMode(mode) {
+  const isExtendMode = mode === "extend";
+  const storageKey = isExtendMode ? "fk-n-extend" : "fk-n";
+  const fallback = isExtendMode ? 6 : 5;
+  const stored = Number(safeStorage.getItem(storageKey) || fallback);
+
+  return Number.isInteger(stored) && stored >= 4 && stored <= 10
+    ? stored
+    : fallback;
+}
+
+let N = storedVertexCountForMode(currentGameMode());
 
 let EDGES = [];
 let EDGE_INDEX = new Map();
@@ -6103,6 +6113,7 @@ function changeGameMode() {
 
   const mode = document.getElementById("gameModeSelect").value;
   safeStorage.setItem("fk-game-mode", mode);
+  N = storedVertexCountForMode(mode);
 
   populateSizeControls();
   buildEdgeData();
@@ -14921,7 +14932,10 @@ function changeN() {
   clearExtendFailureDisplay();
 
   N = Number(document.getElementById("nSelect").value);
-  safeStorage.setItem("fk-n", String(N));
+  safeStorage.setItem(
+    currentGameMode() === "extend" ? "fk-n-extend" : "fk-n",
+    String(N)
+  );
 
   buildEdgeData();
   populateSizeControls();
